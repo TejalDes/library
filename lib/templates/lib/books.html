@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+
+<body>
+    {%if data%}
+    {%for x in data%}
+    <p> Book Name :{{x.book_name}}</p>
+    <p> Author Name :{{x.author.author_name}}</p>
+    <p> Price :{{x.book_price}}</p>
+    <p> Published Date :{{x.book_published_date}}</p>
+    <p> ISBN :{{x.book_isbn}}</p>
+    {%endfor%}
+    {%else%}
+    <p>No data found</p>
+    {%endif%}
+</body>
+
+</html>
