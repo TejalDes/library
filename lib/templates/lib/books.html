@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    {%if data%}
-    {%for x in data%}
+    {%if object_list%}
+    {%for x in object_list%}
     <p> Book Name :{{x.book_name}}</p>
     <p> Author Name :{{x.author.author_name}}</p>
     <p> Price :{{x.book_price}}</p>

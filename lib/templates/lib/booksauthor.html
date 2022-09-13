@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    {%if data%}
-    <p> Book Name :{{data.book_name}}</p>
-    <p> Author Name :{{data.author.author_name}}</p>
-    <p> Price :{{data.book_price}}</p>
-    <p> Published Date :{{data.book_published_date}}</p>
-    <p> ISBN :{{data.book_isbn}}</p>
+    {%if books%}
+    <p> Book Name :{{books.book_name}}</p>
+    <p> Author Name :{{books.author.author_name}}</p>
+    <p> Price :{{books.book_price}}</p>
+    <p> Published Date :{{books.book_published_date}}</p>
+    <p> ISBN :{{books.book_isbn}}</p>
     {%else%}
     <p>No data found</p>
     {%endif%}
